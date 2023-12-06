@@ -89,7 +89,7 @@ window.addEventListener("scroll", function () {
   }
 });
 //cv click alert
-let cvBtn = document.getElementById("cv");
-cvBtn.addEventListener("click", function () {
-  alert("Work in progress. to be added soon");
-});
+// let cvBtn = document.getElementById("cv");
+// cvBtn.addEventListener("click", function () {
+//   alert("Work in progress. to be added soon");
+// });
