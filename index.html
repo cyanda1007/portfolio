@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siyanda Ntshangase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/4f065757a2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("zUc1Nvn9q7-PUqgL4");
+   })();
+</script>
+
 </head>
 <body>
     <div id="container" class="container">
@@ -224,16 +234,41 @@
                          <h3 class="contacthead">Contact</h3>
                          <div class="contactForm">
                       
-                            <form action="">
+                            <!-- <form action="">
                                <label for="name">NAME*</label>
-                                <input type="text" name="name" class="yourName" id="yourName" placeholder="Please enter your name">
+                                <input type="text" name="name" class="yourName" id="name" placeholder="Please enter your name">
                                 <label for="email">EMAIL*</label>
-                                <input type="email" name="email" class="yourEmail" id="yourEmail" placeholder="your@email.com">
+                                <input type="email" name="email" class="yourEmail" id="email" placeholder="your@email.com">
                                 <label for="message">MESSAGE*</label>
-                               <textarea name="message" id="yourMessage" class="yourMessage" cols="30" rows="10"></textarea>
-                               <button>SEND<i class="fa-regular fa-paper-plane"></i></button>
-                            </form>
+                               <textarea name="message" id="yourMessage" class="message" cols="30" rows="10"></textarea>
+                               <button onclick="sendMail()">SEND<i class="fa-regular fa-paper-plane"></i></button>
+                            </form> -->
+                           
+                            <div class="form-group"
+                            <h5 for="name">Name</h5>
+                            <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="Enter your name"
+                            />
                          </div>
+                         <div class="form-group"
+                            <h5 for="email">Email</h5>
+                            <input
+                            type="text"
+                            class="form-control"
+                            id="email"
+                            placeholder="Enter your email"
+                            />
+                         </div>
+                         <div class="form-group">
+                            <h5 for="message">Message</h5>
+                            <textarea id="message" rows="3" class="form-control"></textarea>
+                         </div>
+                         <button class="btn btn-primary"onclick="sendMail()">Submit</button>
+                         </div>
+                    
                          <div class="contactDetails">
                                <div id="phone" class="contDetail">
                                 <i class="fa-solid fa-phone"></i>
@@ -264,7 +299,7 @@
                          </div>
 
            
-
-    <script src="./app.js"></script>
+<script src="./app.js"></script>
+    
 </body>
 </html>
